@@ -276,3 +276,6 @@ php composer.phar install --no-dev
 Setup sysPass
 	https://syspass.example.com
 	For mysql creds use the user/pass you configured earlier in the mariadb config
+
+Don't forget to back everything up.
+	https://tecadmin.net/bash-script-mysql-database-backup/
