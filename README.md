@@ -1,3 +1,9 @@
+> Just a note here: This configuration may need to be tweaked to allow older browsers and devices to access the instance.
+> The devices accessing our instances are up-to-date and running the same OS and browser, so I locked the server down as much as possible.
+> The links in my sources doc should help find the additional settings to open security up a bit.
+> Just keep in mind, less is more.  The more you open up, the more vulnerable your server can become.
+> Also note, I'm not a \*nix pro or an nginx pro...I just did a whole lot of reading and applied what I thought was best for us.  YMMV.
+
 # syspass-nginx
 Installation instructions for [sysPass](https://www.syspass.org/) on NGINX
 
