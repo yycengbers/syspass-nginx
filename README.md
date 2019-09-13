@@ -117,9 +117,11 @@ sudo nano /etc/nginx/snippets/fastcgi-php.conf    #Add to end of file
   fastcgi_read_timeout 14400;
   include fastcgi_params;
 
-sudo nano /etc/php/7.2/mods-available/xdebug.ini    #Edit file to look like this
-	;zend_extension=xdebug.so
-	zend_extension=/usr/lib/php/20170718/xdebug.so
+###### Don't do this in production #####
+#sudo nano /etc/php/7.2/mods-available/xdebug.ini    #Edit file to look like this
+#	;zend_extension=xdebug.so
+#	zend_extension=/usr/lib/php/20170718/xdebug.so
+###### Don't do this in production #####
 
 sudo nano /etc/php/7.2/fpm/php.ini    #Uncommment and edit these lines
 	cgi.fix_pathinfo=0
@@ -218,7 +220,7 @@ server {
             return 404;
         }
 
-        location ~ ^/(app|lib|schemas|vendor|\.rnd)/ {
+        location ~ ^/(lib|schemas|vendor|\.rnd)/ {
             deny all;
         }
 
