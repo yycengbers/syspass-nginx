@@ -220,7 +220,7 @@ server {
             return 404;
         }
 
-        location ~ ^/(lib|schemas|vendor|\.rnd)/ {
+        location ~ ^/(app|lib|schemas|vendor|\.rnd)/ {
             deny all;
         }
 
